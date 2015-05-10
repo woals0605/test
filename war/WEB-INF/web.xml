@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>ProjectLogin</servlet-name>
+		<servlet-class>kr.ac.shinhan.csp.ProjectLoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProjectLogin</servlet-name>
+		<url-pattern>/projectlogin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>kr.ac.shinhan.csp.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/loginServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ReadTeamMemberServlet</servlet-name>
+		<servlet-class>kr.ac.shinhan.csp.ReadTeamMemberServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReadTeamMemberServlet</servlet-name>
+		<url-pattern>/readTeamMemberServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RetriveTeamMemberServlet</servlet-name>
+		<servlet-class>kr.ac.shinhan.csp.RetriveTeamMemberServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RetriveTeamMemberServlet</servlet-name>
+		<url-pattern>/retriveTeamMemberServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SignUpServlet</servlet-name>
+		<servlet-class>kr.ac.shinhan.csp.SignUpServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SignUpServlet</servlet-name>
+		<url-pattern>/signUpServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UpdateMemberServlet</servlet-name>
+		<servlet-class>kr.ac.shinhan.csp.UpdateMemberServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateMemberServlet</servlet-name>
+		<url-pattern>/updateMemberServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetandPostReportServlet</servlet-name>
+		<servlet-class>kr.ac.shinhan.csp.GetandPostReportServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetandPostReportServlet</servlet-name>
+		<url-pattern>/getandPostReportServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteMemberServlet</servlet-name>
+		<servlet-class>kr.ac.shinhan.csp.DeleteMemberServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteMemberServlet</servlet-name>
+		<url-pattern>/deleteMemberServlet</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>login.html</welcome-file>
+	</welcome-file-list>
+</web-app>
